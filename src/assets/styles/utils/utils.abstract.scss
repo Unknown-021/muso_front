@@ -1,0 +1,6 @@
+@mixin reset-outline {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}

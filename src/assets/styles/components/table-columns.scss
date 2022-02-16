@@ -1,0 +1,130 @@
+.table-root {
+  --pct-font-weight: 400;
+
+  --avatar-size: 40px;
+  --small-avatar-size: 24px;
+  --profile-avatar-size: var(--avatar-size);
+  --album-cover-size: var(--avatar-size);
+  --col-avatar-padding-right: 20px;
+  --col-small-avatar-padding-right: 12px;
+  --col-avatar: calc(var(--avatar-size) + var(--col-avatar-padding-right));
+  --col-small-avatar: calc(var(--small-avatar-size) + var(--col-small-avatar-padding-right));
+  --index-width: 16px;
+  --col-index-padding-right: 12px;
+  --col-index: calc(var(--index-width) + var(--col-index-padding-right));
+
+  --col-reo: 20px;
+  --col-check: 26px;
+  --col-opt: 30px;
+}
+
+[data-def-cols-count="1"] {
+  --col-default: 65.8%;
+}
+[data-def-cols-count="1"] {
+  --col-default: 65.8%;
+}
+[data-def-cols-count="2"] {
+  --col-default: 34%;
+}
+[data-def-cols-count="3"] {
+  --col-default: 23.5%;
+}
+[data-def-cols-count="4"] {
+  --col-default: 18.5%;
+}
+[data-def-cols-count="5"] {
+  --col-default: 15%;
+}
+[data-def-cols-count="6"] {
+  --col-default: 13%;
+}
+[data-def-cols-count="7"] {
+  --col-default: 11.5%;
+}
+
+.has-col-avatar {
+  --tr-border-left-indent: var(--col-avatar);
+}
+.has-col-index {
+  --tr-border-left-indent: var(--col-index);
+}
+// .has-col-avatar.has-col-index {
+//   --tr-border-left-indent: calc(var(--col-index) + var(--col-avatar));
+// }
+.col-collab-date {
+  width: 125px;
+}
+
+td.col-release-date,
+td.col-streams,
+td.col-streams-wide {
+  > .skeleton[class] {
+    display: inline-flex;
+    width: 50px;
+  }
+}
+
+.col-avatar {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 0;
+  margin-right: auto;
+  .skeleton {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+  }
+  @at-root {
+    &.th .skeleton {
+      display: none;
+    }
+  }
+}
+
+.col-index {
+  width: 30px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.col-index[role="cell"] {
+  color: var(--overlay-2-color);
+}
+
+.td.col-master {
+  font-weight: 500;
+}
+
+.col-def {
+  flex-basis: var(--col-default);
+}
+
+.col-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.td.col-number  {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.col-opt {
+  padding-right: 0;
+}
+
+.col-master {
+  // width: 0;
+  // flex-grow: 1;
+  &.td {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.col-def-3 {
+  width: 23%;
+}
+
+.col-m {
+  width: 160px;
+}

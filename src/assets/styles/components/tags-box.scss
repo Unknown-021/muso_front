@@ -1,0 +1,46 @@
+:root {
+  --tags-box-color: inherit;
+  --tags-box-max-width: 550px;
+  --tags-box-hover-background-color: rgb(55, 54, 53);
+}
+.tags-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 5px;
+  width: 100%;
+  max-width: var(--tags-box-max-width);
+  text-align: right;
+  font-weight: 500;
+  color: var(--tags-box-color);
+  transition-property: background-color, color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--tags-box-hover-background-color);
+  }
+  &[data-empty] {
+    font-weight: 400;
+    --tags-box-color: #8F8F8F;
+  }
+  &[data-disabled] {
+    --tags-box-hover-background-color: transparent;
+    cursor: default;
+  }
+  &__icon {
+    margin-left: 4px;
+  }
+  svg {
+    transition-property: fill, stroke;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+  }
+  svg:not([stroke]) {
+    fill: var(--tags-box-color, currentColor);
+  }
+  svg[stroke] {
+    stroke: var(--tags-box-color, currentColor);
+  }
+}

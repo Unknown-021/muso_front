@@ -1,0 +1,15 @@
+module.exports = {
+	bases: {
+		host: 'muso.ai',
+		io: 'https://muso.ai/',
+		api: 'https://muso.ai/api/v2/',
+		apiNext: 'https://muso.ai/api/v3/',
+		stripe: {
+			publishableKey: 'pk_test_Iok0QmJU0I'
+		},
+		paypal: {
+			clientId: 'ATl6ohy5DVBU',
+			planId: 'P-86Y57343AC46'
+		}
+	}
+}

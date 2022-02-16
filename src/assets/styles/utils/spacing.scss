@@ -1,0 +1,39 @@
+@import "spacing.abstract.scss";
+
+@mixin spacing-utils($name, $value) {
+  .my-#{$name},
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .my-#{$name},
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .mr-#{$name},
+  .mx-#{$name} {
+    margin-right: $value;
+  }
+  .ml-#{$name},
+  .mx-#{$name} {
+    margin-left: $value;
+  }
+}
+
+
+@mixin spacings {
+  @each $name, $values in $spacings {
+    // TODO: Use breakpoints mixin when SCSS version will be updated
+    $i: 1;
+    @each $value in $values {
+      @if $value {
+        $breakpoint: nth($breakpoints, $i);
+        @include breakpoint-min($breakpoint) {
+          @include spacing-utils($name, $value);
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+@include spacings;

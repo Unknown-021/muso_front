@@ -1,0 +1,78 @@
+.amount-info-container {
+  --amount-info-gap: 12px;
+  display: flex;
+  margin-right: calc(var(--amount-info-gap) * -1);
+  @media (min-width: 768px) {
+    --amount-info-gap: 19px;
+  }
+  > * {
+    margin-right: var(--amount-info-gap);
+    @media (max-width: 767px) {
+      max-width: 100px;
+      flex-grow: 1;
+    }
+  }
+}
+
+.amount-info {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-align: start;
+  }
+  @media (min-width: 768px) {
+    display: inline-flex;
+    color: #F7F7F7;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: normal;
+    color: #595857;
+    @media (max-width: 767px) {
+      margin-bottom: 2px;
+    }
+    @media (min-width: 768px) {
+      margin-right: 0.3em;
+      color: #8F8F8F;
+      &::after {
+        content: ":";
+      }
+    }
+  }
+
+  &__text {
+    display: inline-flex;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      font-weight: 500;
+      color: #FFF;
+    }
+  }
+
+  &__info-btn {
+    align-self: center;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    @media (min-width: 768px) {
+      margin-left: 11px;
+    }
+  }
+}
+
+// "sd" stands for space distributor
+// Unfortunately pure CSS doesn't allow to solve problem with amount-info columns
+// In our case we don't want to have fixed gap between two columns, we want to have flexible gap
+// which at minimum 20px width and if there is enough space we increase one up to 40px
+.amount-info-sd {
+  width: 20px;
+  @media (max-width: 767px) {
+    flex-grow: 1;
+    max-width: 45px;
+  }
+  @media (min-width: 768px) {
+    width: 16px;
+  }
+}

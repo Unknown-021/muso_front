@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0, initial-scale=1" name="viewport">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Muso.AI">
+        <meta property="al:ios:app_name" content="Muso.AI">
+        <meta property="al:ios:app_store_id" content="1380264939">
+        <meta property="twitter:site" content="@ai_muso">
+        <meta property="twitter:app:id:iphone" content="1380264939">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="public/fonts.css">
+        {{{ meta.inject().title.text() }}}
+        {{{ meta.inject().meta.text() }}}
+        <link rel="stylesheet" href="public/{{appName}}.css">
+        <link rel="stylesheet" href="public/landing.css">
+        <link rel="preconnect" href="{{ api }}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    </head>
+    <body>
+        <div id="page-background-image"></div>
+        <!--vue-ssr-outlet-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" nonce="{{ nonce }}"></script>
+        <script src="js/utils/detections.js" async></script>
+        <script src="js/webflow/index.js" async></script>
+        <script nonce="{{ nonce }}">
+            window.lazySizesConfig = {
+                expFactor: 4
+            };
+        </script>
+        <script src="js/lazysizes.min.js" async></script>
+
+        {{{ isInjectAnalytics ?
+            `<!-- Facebook Pixel Code -->
+            <script nonce="${nonce}">
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '4169710619722136');
+                fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4169710619722136&ev=PageView&noscript=1" /></noscript>
+            <!-- End Facebook Pixel Code -->
+
+            <!-- Hotjar Tracking Code for muso.ai -->
+            <script nonce="${nonce}">
+                (function(h,o,t,j,a,r){
+                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                    h._hjSettings={hjid:2572665,hjsv:6};
+                    a=o.getElementsByTagName('head')[0];
+                    r=o.createElement('script');r.async=1;
+                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                    a.appendChild(r);
+                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            </script>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180177842-1" nonce="${nonce}"></script>
+            <script nonce="${nonce}">
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-180177842-1');
+            </script>
+            <!-- Google Tag Manager -->`
+            : ''
+        }}}
+
+        <!-- For alerts, prompts, errors, warnings and so on -->
+        <div id="app-dialog"></div>
+        <script src="public/{{appName}}.js"></script>
+    </body>
+</html>

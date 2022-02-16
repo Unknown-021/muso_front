@@ -1,0 +1,31 @@
+.summary {
+  display: flex;
+  margin-bottom: 30px;
+
+  .item {
+    flex: 0 0 300px;
+    border-radius: 10px;
+    box-shadow: 0 6px 9px rgba(#90A4B7, .22);
+    padding: 25px;
+    background: #ffffff;
+
+    & + .item {
+      margin-left: 50px;
+    }
+
+    .title {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 400;
+      color: #000000;
+    }
+
+    .value {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 18px;
+      color: #03c9a9;
+      margin-top: 22px;
+    }
+  }
+}

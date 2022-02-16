@@ -1,0 +1,68 @@
+:root {
+  --more-button-size: 17px;
+  --more-button-color: #8F8F8F;
+  --more-button-hover-color: #F7F7F7;
+  --more-button-active-color: #F7F7F7;
+  --more-button-expand-x: unset;
+  --more-button-expand-y: unset;
+  --more-button-expand-default: 5px;
+}
+.more-button {
+  -webkit-appearance: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  color: var(--more-button-color);
+  background-color: transparent;
+  transition: color 100ms ease-in-out;
+  @media (min-width: 768px) {
+    background-size: 24px auto;
+  }
+  &:empty {
+    width: 20px;
+    height: 20px;
+    background-image: url("images/icons/more.svg");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:hover,
+  &[data-hovered],
+  &[data-active] {
+    --more-button-color: var(--more-button-hover-color);
+  }
+  &:active {
+    --more-button-color: var(--more-button-active-color);
+  }
+  &::before {
+    // Expand clickable area of button, so it's easier to hit it
+    content: "";
+    position: absolute;
+    --expand-x: calc(-1 * var(--more-button-expand-x, var(--more-button-expand-default)));
+    --expand-y: calc(-1 * var(--more-button-expand-y, var(--more-button-expand-default)));
+    top: var(--expand-y);
+    bottom: var(--expand-y);
+    left: var(--expand-x);
+    right: var(--expand-x);
+  }
+  &--light {
+    --more-button-color: #F7F7F7;
+    --more-button-hover-color: #8F8F8F;
+    --more-button-active-color: #595857;
+  }
+  &--thick {
+    svg {
+      --more-button-size: 22px;
+    }
+  }
+  svg {
+    width: var(--more-button-size);
+    height: var(--more-button-size);
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,24 @@
+.lined-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  color: var(--overlay-4-color);
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--border-color-3);
+  }
+  &::before {
+    margin-right: 10px;
+  }
+  &::after {
+    margin-left: 10px;
+  }
+}
+.my-lined-text {
+  @include spacing(l, top, bottom);
+}

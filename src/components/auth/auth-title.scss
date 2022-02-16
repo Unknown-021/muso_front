@@ -1,0 +1,14 @@
+.auth-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+
+  @media (min-width: 576px) {
+    font-size: 50px;
+  }
+}

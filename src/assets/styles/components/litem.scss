@@ -1,0 +1,41 @@
+:root {
+  --litem-padding-left: unset;
+  --litem-padding-x: 15px;
+}
+// List item
+.litem {
+  display: flex;
+  align-items: center;
+  padding: 5px var(--litem-padding-x);
+  padding-left: var(--litem-padding-left, var(--litem-padding-x));
+  min-height: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #F2F2F2;
+  &--skel {
+    align-items: center;
+    pointer-events: none;
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: #151413;
+  }
+  &__number {
+    flex-shrink: 0;
+    width: 20px;
+    color: #8F8F8F;
+  }
+  &__after {
+    margin-left: auto;
+    padding-left: 15px;
+    &--focusable {
+      opacity: 0;
+      @at-root {
+        .litem:hover &,
+        [data-focused] & {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

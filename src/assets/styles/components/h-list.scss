@@ -1,0 +1,44 @@
+:root {
+  --vline-color: #21201F;
+  --vline-height: 25px;
+  --vline-gap: 15px;
+}
+
+.h-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+  color: #8F8F8F;
+  > * {
+    margin-bottom: 10px;
+  }
+}
+
+.h-line,
+.v-line {
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: var(--vline-gap);
+  margin-right: var(--vline-gap);
+  width: 1px;
+  height: var(--vline-height);
+  background: var(--vline-color);
+}
+
+.h-item {
+  &::after {
+    @media (min-width: 768px) {
+      content: "";
+      margin-left: var(--vline-gap);
+      margin-right: var(--vline-gap);
+      width: 1px;
+      height: var(--vline-height);
+      background: var(--vline-color);
+    }
+  }
+  &:last-child::after {
+    display: none;
+  }
+}

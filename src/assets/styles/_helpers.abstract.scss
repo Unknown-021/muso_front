@@ -1,0 +1,7 @@
+@mixin set-variable($prefixes, $variables) {
+  @each $prefix in $prefixes {
+    @each $variable, $value in $variables {
+      --#{$prefix}-#{$variable}: #{$value};
+    }
+  }
+}

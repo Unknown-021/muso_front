@@ -1,0 +1,36 @@
+:root {
+  --background-color: #0C0B09;
+  --base-1-color: #171615;
+  --base-2-color: #21201F;
+  --base-3-color: #2A2827;
+  --base-4-color: #3D3C3A;
+  --base-5-color: #8F8F8F;
+  --base-hover-color: #22211F;
+  --overlay-1-color: #F7F7F7;
+  --overlay-2-color: #CCCCCC;
+  --overlay-3-color: var(--base-5-color);
+  --overlay-4-color: #595857;
+  --overlay-5-color: #FFFFFF;
+  --primary-color: #6BE7C8;
+  --secondary-color: #03C9A9;
+  --tertriary-color: #00A0AF;
+  --primary-gradient: linear-gradient(270deg, var(--tertriary-color) 0%, var(--primary-color) 100%);
+  --error-color: #FF3B30;
+  --accent-2-color: #6BD1E7;
+  --accent-3-color: #6B9DE7;
+  --border-color: var(--base-3-color);
+  --border-color-2: var(--overlay-4-color);
+  --border-color-3: var(--base-4-color);
+}
+
+.c-error {
+  color: var(--error-color);
+}
+
+.c-overlay-1 {
+  color: var(--overlay-1-color);
+}
+
+.c-primary {
+  color: var(--primary-color);
+}

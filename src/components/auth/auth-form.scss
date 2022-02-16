@@ -1,0 +1,36 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  &__nav-back-icon {
+    position: relative;
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    transition: transform 150ms ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 5px;
+      top: -6px;
+      left: -8px;
+      right: -8px;
+      bottom: -6px;
+    }
+    &:hover {
+      transform: translateX(-4px);
+    }
+  }
+
+  &__pswd-input {
+    margin-top: 19px;
+  }
+}

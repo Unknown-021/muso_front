@@ -1,0 +1,29 @@
+@import "breakpoints.abstract.scss";
+
+$spacings: (
+  xxs: (4px, null, null),
+  xs: (8px, null, null),
+  s: (12px, null, null),
+  m: (16px, null, null),
+  l: (24px, null, null),
+  xl: (28px, null, 32px),
+  xxl: (36px, null, 48px),
+  xxxl: (40px, 48px, 80px)
+);
+
+@mixin spacing($name, $directions...) {
+  $values: map-get($spacings, $name);
+  // TODO: Use breakpoints mixin when SCSS version will be updated
+  $i: 1;
+  @each $value in $values {
+    @if $value {
+      $breakpoint: nth($breakpoints, $i);
+      @include breakpoint-min($breakpoint) {
+        @each $direction in $directions {
+          margin-#{$direction}: $value;
+        }
+      }
+    }
+    $i: $i + 1;
+  }
+}

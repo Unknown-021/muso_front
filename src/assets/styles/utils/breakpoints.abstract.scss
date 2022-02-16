@@ -1,0 +1,36 @@
+$phone-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+$before-phone: "(max-width: #{phone-width - 1})";
+$phone: "(min-width: #{$phone-width})";
+$before-tablet: "(max-width: #{$tablet-width - 1})";
+$tablet: "(min-width: #{$tablet-width})";
+$before-desktop: "(max-width: #{$desktop-width - 1})";
+$desktop: "(min-width: #{$desktop-width})";
+
+$breakpoints: 0, $tablet-width, $desktop-width;
+
+@mixin breakpoint-min($breakpoint) {
+  @if $breakpoint and $breakpoint != 0 {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Use this util, when sass version will be updated, so we can use pass arguments to @content
+// @mixin breakpoints($values) {
+//   $i: 1;
+//   @each $value in $values {
+//     @if $value {
+//       $breakpoint: nth($breakpoints, $i);
+//       @include breakpoint-min($breakpoint) {
+//         @content($value);
+//       }
+//     }
+//     $i: $i + 1;
+//   }
+// }

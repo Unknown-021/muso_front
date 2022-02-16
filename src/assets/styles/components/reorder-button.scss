@@ -1,0 +1,17 @@
+.reorder-btn {
+  position: relative;
+  cursor: move;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+  @at-root {
+    .td & {
+      margin-top: 8px;
+    }
+  }
+}

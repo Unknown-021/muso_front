@@ -1,0 +1,1674 @@
+.nav-bar {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0c0b09;
+}
+
+.brand-logo {
+  max-height: 22px;
+}
+
+.brand {
+  width: 35px;
+  height: 25px;
+}
+
+.nav-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-column.middle {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.nav-column.right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.page-title {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.nav-columns {
+  width: 100%;
+  max-width: 1170px;
+}
+
+.export-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -15px;
+  padding: 10px 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0b0b09;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.export-button:hover {
+  border: 2px solid #fff;
+}
+
+.export-icon {
+  max-width: 100%;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+.page-content {
+  background-color: #222328;
+  min-height: 1000px;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1170px;
+  margin: 30px 0 !important;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #0b0b09;
+  box-shadow: 3px 0 12px 3px #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-header {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.album-title {
+  max-width: 65%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+}
+
+.performer-name {
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.flex-horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.content-date {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.album-information {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.album-art {
+  width: 135px;
+  height: 135px;
+  background-image: url('../../images/default-avatars/project_default_square.png');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.album-information-titles {
+  margin-left: 30px;
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.album-information-content {
+  margin-left: 30px;
+  color: #eee;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.seperator {
+  height: 15px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  background-color: #242322;
+}
+
+.song-title-container {
+  padding: 15px 52px 15px 50px;
+}
+
+.song-title {
+  color: #fff;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.song-collaborator-count {
+  width: 150px;
+  color: #a8a8a8;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.parent-credit-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #eee;
+  color: #333;
+}
+
+.parent-credit-counter {
+  width: 60px;
+  color: #0b0b09;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.parent-credit {
+  margin-left: 30px;
+  color: #0b0b09;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.collaborator-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px 15px 50px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: #333;
+}
+
+.collaborator-row.multiple {
+  padding-bottom: 0px;
+}
+
+.collaborator-image {
+  overflow: visible;
+  width: 50px;
+  height: 48px;
+  border-radius: 100px;
+  background-image: url('../../images/default-avatars/profile_default.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.collaborator-names-container {
+  width: 40%;
+  margin-left: 0px;
+}
+
+.collaborator-display-name {
+  display: block;
+  color: #0c0b09;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.collaborator-legal-name {
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+}
+
+.role-text {
+  display: block;
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 200;
+}
+
+.role-credit {
+  color: #0b0b09;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.collaborator-roles-container {
+  width: 30%;
+  margin-left: 30px;
+}
+
+.collaborator-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 15px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.collaborator-content.more-than-one {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.collaborator-content.more-than-one.last {
+  border-bottom-style: none;
+}
+
+.collaborator-names-date {
+  width: 30%;
+  margin-left: 0px;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-field-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 960px;
+  height: 650px;
+  padding: 0px;
+  background-color: #090b10;
+  box-shadow: 1px 1px 12px 3px rgba(0, 0, 0, 0.5);
+}
+
+.input-field-header {
+  margin-bottom: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 5px 15px 10px;
+  background-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #000000;
+  font-size: 16px;
+}
+
+.input-field-title {
+  margin-bottom: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.important {
+  color: red;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #6be7c8;
+  background-color: transparent;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #6be7c8;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #6be7c8;
+  color: #090b0f;
+}
+
+.background-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../../images/pasted-image3x.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.form-container {
+  position: relative;
+  width: 50%;
+  padding: 50px 49px;
+}
+
+.logo-icon {
+  max-width: 100%;
+}
+
+.sub-line {
+  margin-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.flex-left {
+  max-width: 70%;
+}
+
+.cancel-button {
+  position: absolute;
+  left: auto;
+  top: 10px;
+  right: 10px;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #6be7c8;
+  border-radius: 20px;
+}
+
+.performer-name-discography {
+  display: inline;
+  color: #8f8f8f;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.verified-icon {
+  position: relative;
+  top: -2px;
+  margin-left: 0px;
+}
+
+.release-date {
+  width: auto;
+  color: #0b0b09;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.profile-picture {
+  width: 135px;
+  height: 135px;
+  background-image: url('../../images/default-avatars/profile_default_square.png');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.brand-text-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 135px;
+  padding-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: #7e7e7e;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.row-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding: 15px 50px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #242322;
+}
+
+.song-header {
+  width: 400px;
+  color: #a8a8a8;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.album-header {
+  width: 320px;
+  color: #a8a8a8;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.role-header {
+  width: 260px;
+  color: #a8a8a8;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.album-image {
+  overflow: visible;
+  width: 50px;
+  height: 48px;
+  border-radius: 0px;
+  background-image: url('../../images/default-avatars/project_default_square.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.song-name-discography {
+  display: block;
+  color: #0c0b09;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.album-names-container {
+  width: 315px;
+  margin-left: 0px;
+}
+
+.album-title-row {
+  width: 305px;
+  margin-left: 0px;
+}
+
+.song-role-header {
+  width: 250px;
+  margin-left: 0px;
+}
+
+.stream-header {
+  width: 188px;
+  margin-left: 0px;
+  padding-right: 50px;
+}
+
+.text-block {
+  color: #8f8f8f;
+}
+
+.profile {
+  width: 135px;
+  height: 135px;
+  background-image: url('../images/fallen.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  .nav-bar {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .brand-logo {
+    max-height: 17px;
+  }
+  .nav-column {
+    font-size: 14px;
+  }
+  .nav-column.middle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .nav-column.right {
+    font-size: 14px;
+  }
+  .page-title {
+    margin-left: 0px;
+  }
+  .export-button {
+    padding: 5px 10px;
+  }
+  .content {
+    max-width: 768px;
+  }
+  .content-header {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .album-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .performer-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .content-date {
+    font-size: 14px;
+    line-height: 17.7px;
+  }
+  .album-information {
+    margin-top: 15px;
+  }
+  .album-art {
+    width: 85px;
+    height: 85px;
+  }
+  .album-information-titles {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .album-information-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .seperator {
+    height: 10px;
+    margin-top: 15px;
+  }
+  .song-title-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .song-title {
+    font-size: 18px;
+  }
+  .song-collaborator-count {
+    width: 100px;
+    font-size: 14px;
+  }
+  .parent-credit-row {
+    padding-left: 30px;
+  }
+  .parent-credit-counter {
+    width: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+  .parent-credit {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+  .collaborator-row {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+  }
+  .collaborator-row.multiple {
+    padding-bottom: 10px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .collaborator-image {
+    width: 40px;
+    height: 36px;
+  }
+  .collaborator-display-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .collaborator-legal-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .role-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .role-credit {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .collaborator-content {
+    width: 90%;
+    padding-bottom: 5px;
+  }
+  .collaborator-content.more-than-one {
+    width: 90%;
+    margin-bottom: -10px;
+    padding-bottom: 5px;
+    border-bottom-width: 1px;
+  }
+  .overlay {
+    display: none;
+  }
+  .input-field-container {
+    width: 90%;
+  }
+  .input-field-header {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .input-field {
+    width: 100%;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .input-field-title {
+    font-size: 14px;
+  }
+  .submit-button {
+    border-width: 2px;
+    font-size: 16px;
+  }
+  .form-container {
+    display: block;
+    padding-right: 31px;
+    padding-left: 31px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .sub-line {
+    font-size: 32px;
+  }
+  .performer-name-discography {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .verified-icon {
+    width: 24px;
+  }
+  .release-date {
+    width: auto;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+  .profile-picture {
+    width: 85px;
+    height: 85px;
+  }
+  .brand-text-container {
+    height: 85px;
+    padding-bottom: 0px;
+    font-size: 14px;
+  }
+  .row-header {
+    height: 10px;
+    margin-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .song-header {
+    width: 235px;
+    font-size: 14px;
+  }
+  .album-header {
+    width: 180px;
+    font-size: 14px;
+  }
+  .role-header {
+    width: 180px;
+    font-size: 14px;
+  }
+  .album-image {
+    overflow: visible;
+    width: 40px;
+    height: 40px;
+  }
+  .song-name-discography {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .album-names-container {
+    width: 200px;
+  }
+  .album-title-row {
+    width: 200px;
+  }
+  .song-role-header {
+    width: 200px;
+  }
+  .stream-header {
+    width: 125px;
+  }
+  .brand-image {
+    width: 40px;
+  }
+  .text-block {
+    color: #8f8f8f;
+    line-height: 18px;
+  }
+  .profile {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body {
+    background-color: #0c0b09;
+  }
+  .album-title.mobile {
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .flex-horizontal.left {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .album-art.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-position: 50% 50%;
+  }
+  .album-art.mobile-view {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    margin-right: 20px;
+  }
+  .collaborator-image {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+  }
+  .desktop-tablet-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+    background-color: #0c0b09;
+  }
+  .navbar.mobile {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #21201f;
+    background-color: #0b0b09;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+  }
+  .header-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 59px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #21201f;
+  }
+  .album-info-mobile {
+    margin-left: 20px;
+  }
+  .album-title-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .performer-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+  }
+  .information-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .information-text.white {
+    color: #fff;
+    font-weight: 500;
+  }
+  .sub-information {
+    margin-right: 5px;
+  }
+  .data-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .stat-gray {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #5f5e5d;
+    line-height: 24px;
+  }
+  .stat-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .stat-left {
+    margin-right: 80px;
+  }
+  .seperator-mobile {
+    width: 100%;
+    height: 8px;
+    background-color: #262524;
+  }
+  .song-row-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    background-color: #0b0b09;
+  }
+  .song-title-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .collaborators-text-mobile {
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+    line-height: 16px;
+  }
+  .collaborators-text-mobile.white {
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    line-height: 16px;
+  }
+  .collaborator-row-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 15px;
+    background-color: #eee;
+  }
+  .collaborator-content-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    background-color: #fff;
+  }
+  .collaborator-content-row.multiple {
+    padding-bottom: 0px;
+  }
+  .artist-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #0b0b09;
+    line-height: 16px;
+    font-weight: 700;
+  }
+  .legal-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  .collaborator-role-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #0b0b09;
+    line-height: 16px;
+  }
+  .flex-center-out {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .flex-center-out.multiple {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .overlay {
+    display: none;
+  }
+  .input-field-container {
+    height: auto;
+  }
+  .background-image {
+    display: none;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .profile-picture.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-position: 50% 50%;
+  }
+  .profile-picture.mobile-view {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .album-image {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+  }
+  .profile-info-middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .performer-discography {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 14px;
+  }
+  .profile-title-discography {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .profile.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-image: url('../../images/default-avatars/profile_default_square.png');
+    background-position: 50% 50%;
+  }
+  .profile.mobile-view {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .credit-numbers {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+  }
+  .credits-title {
+    margin-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+  }
+  .album-art-mobile {
+    width: 44px;
+    height: 44px;
+  }
+  .song-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    border-bottom: 1px solid #21201f;
+  }
+  .song {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    background-color: #0b0b09;
+  }
+  .song.first {
+    padding-bottom: 0px;
+  }
+  .mobile-artist {
+    width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+  }
+  .mobile-artist.right {
+    width: 30%;
+    text-align: right;
+  }
+  .mobile-artist.right.hidden {
+    opacity: 0;
+  }
+  .song-title-mobile-row {
+    width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+  }
+  .white-text {
+    color: #fff;
+  }
+}
+
+@media (max-width: 479px) {
+  .nav-bar {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .brand-logo {
+    max-height: 18px;
+  }
+  .nav-column {
+    font-size: 12px;
+  }
+  .nav-column.middle {
+    font-size: 12px;
+  }
+  .nav-column.right {
+    font-size: 12px;
+  }
+  .page-title {
+    display: none;
+  }
+  .export-icon {
+    margin-left: 0px;
+  }
+  .body {
+    background-color: #0c0b09;
+  }
+  .album-title.mobile {
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+  }
+  .flex-horizontal.left {
+    margin-top: 10px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .album-art.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-position: 50% 50%;
+  }
+  .album-art.mobile-view {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    margin-right: 20px;
+  }
+  .parent-credit {
+    margin-left: 15px;
+  }
+  .collaborator-image {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    margin-right: 15px;
+  }
+  .export-text {
+    display: none;
+  }
+  .navbar.mobile {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #21201f;
+    background-color: #0b0b09;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  .header-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 59px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #21201f;
+  }
+  .album-info-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .album-title-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .performer-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+  }
+  .information-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .information-text.white {
+    color: #fff;
+    font-weight: 500;
+  }
+  .sub-information {
+    margin-right: 5px;
+  }
+  .data-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px none #21201f;
+  }
+  .stat-gray {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #5f5e5d;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .stat-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .stat-left {
+    margin-right: 80px;
+  }
+  .stat-left.discography {
+    margin-right: 0px;
+  }
+  .seperator-mobile {
+    width: 100%;
+    height: 8px;
+    background-color: #262524;
+  }
+  .song-row-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    background-color: #0b0b09;
+  }
+  .song-title-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .collaborators-text-mobile {
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .collaborators-text-mobile.white {
+    color: #fff;
+  }
+  .collaborator-row-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 15px;
+    background-color: #eee;
+  }
+  .collaborator-content-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 15px;
+    background-color: #fff;
+  }
+  .collaborator-content-row.multiple {
+    padding-bottom: 0px;
+  }
+  .collaborator-data-container {
+    width: 75%;
+  }
+  .artist-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #0b0b09;
+    line-height: 16px;
+    font-weight: 700;
+  }
+  .legal-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  .legal-name.right {
+    width: 60px;
+    text-align: right;
+  }
+  .collaborator-role-mobile {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #0c0b09;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .flex-center-out {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .flex-center-out.multiple {
+    padding-bottom: 20px;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+  }
+  .overlay {
+    display: none;
+  }
+  .input-field-container {
+    height: auto;
+  }
+  .profile-picture.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-position: 50% 50%;
+  }
+  .profile-picture.mobile-view {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .album-image {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    margin-right: 15px;
+  }
+  .profile-info-middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .performer-discography {
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #8f8f8f;
+    font-size: 12px;
+  }
+  .profile-title-discography {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .profile.mobile {
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    background-position: 50% 50%;
+  }
+  .profile.mobile-view {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  .credit-numbers {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+  }
+  .credits-title {
+    margin-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 24px;
+  }
+  .album-art-mobile {
+    width: 44px;
+    height: 44px;
+  }
+  .song-content {
+    width: 100%;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #21201f;
+  }
+  .song {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 0px 0px 0px 15px;
+    background-color: #0b0b09;
+  }
+  .song.first {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .mobile-artist {
+    display: inline;
+    width: 90%;
+    max-width: 190px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #595857;
+  }
+  .mobile-artist.hidden {
+    opacity: 0;
+  }
+  .mobile-artist.right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .mobile-artist.right.hidden {
+    width: 50%;
+  }
+  .song-title-mobile-row {
+    display: inline;
+    width: 90%;
+    max-width: 190px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+  }
+  .white-text {
+    margin-right: 5px;
+    color: #fff;
+  }
+}

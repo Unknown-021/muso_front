@@ -1,0 +1,27 @@
+.notification {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 15px 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+
+    &.notification-success {
+        background-color: #00c6a2;
+        display: block;
+    }
+
+    &.notification-error {
+        background-color: #FF233E;
+        display: block;
+    }
+}

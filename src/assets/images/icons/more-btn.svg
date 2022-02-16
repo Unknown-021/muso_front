@@ -1,0 +1,13 @@
+<svg class="more-btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect class="more-btn-svg-fill" x="0.5" y="0.5" width="24" height="24" fill="#3D3C3A" rx="1.5" />
+<rect x="4.6665" y="10.6666" width="2.66667" height="2.66667" rx="0.333333" fill="#F7F7F7"/>
+<rect x="10.6665" y="10.6666" width="2.66667" height="2.66667" rx="0.333333" fill="#F7F7F7"/>
+<rect x="16.6665" y="10.6666" width="2.66667" height="2.66667" rx="0.333333" fill="#F7F7F7"/>
+<rect class="more-btn-svg-stroke" x="0.5" y="0.5" width="23" height="23" rx="1.5" stroke="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CFCFCF"/>
+<stop offset="1" stop-color="#8F8F8F"/>
+</linearGradient>
+</defs>
+</svg>
